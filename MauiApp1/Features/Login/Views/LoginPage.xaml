@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Features.Login.Views.LoginPage"
+             Title="Đăng nhập"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="20"
+                             VerticalOptions="Center" HorizontalOptions="Center">
+
+            <Label Text="Welcome Back!"
+                   FontSize="28"
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   FontAttributes="Bold" />
+
+            <Entry Placeholder="Username"
+                   Text="{Binding Username, Mode=TwoWay}"
+                   FontSize="16"
+                   BackgroundColor="#f0f0f0"
+                   HeightRequest="48"
+                   TextColor="Black" />
+
+            <Entry Placeholder="Password"
+                   IsPassword="True"
+                   Text="{Binding Password, Mode=TwoWay}"
+                   FontSize="16"
+                   BackgroundColor="#f0f0f0"
+                   HeightRequest="48"
+                   TextColor="Black" />
+
+            <Button Text="Login"
+                    Command="{Binding LoginCommand}"
+                    FontSize="18"
+                    BackgroundColor="#007aff"
+                    TextColor="White"
+                    HeightRequest="50"
+                    CornerRadius="12" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
