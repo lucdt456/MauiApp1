@@ -76,11 +76,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Core\Models\DTOs\" />
 	  <Folder Include="Core\Utils\Converters\" />
-	  <Folder Include="Core\Utils\Helpers\" />
 	  <Folder Include="Core\Utils\Mapper\" />
-	  <Folder Include="Features\Login\Services\" />
 	  <Folder Include="Features\Shop\Views\" />
 	  <Folder Include="Features\Shop\ViewModels\" />
 	  <Folder Include="Features\Shop\Services\" />

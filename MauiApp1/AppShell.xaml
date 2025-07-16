@@ -4,15 +4,17 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MauiApp1"
+    xmlns:views="clr-namespace:MauiApp1.Features.Login.Views"
     Title="MauiApp1">
+
+    <ShellContent
+        Title="Login"
+        ContentTemplate="{DataTemplate views:LoginPage}"
+        Route="LoginPage" />
 
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-    <ShellContent
-     Title="Home"
-     ContentTemplate="{DataTemplate local:MainPage}"
-     Route="MainPage" />
-
 </Shell>
+    

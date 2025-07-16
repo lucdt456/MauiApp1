@@ -1,4 +1,5 @@
-﻿using MauiApp1.Features.Login.Viewmodels;
+﻿using MauiApp1.Features.Login.Services;
+using MauiApp1.Features.Login.Viewmodels;
 using MauiApp1.Features.Login.Views;
 using Microsoft.Extensions.Logging;
 
@@ -19,6 +20,8 @@ namespace MauiApp1
             builder.Services.AddTransient<LoginPage>();
             builder.Services.AddTransient<LoginViewModel>();
             builder.Services.AddSingleton<App>();
+
+            builder.Services.AddScoped<IAuthService, AuthService>();
 
 #if DEBUG
             builder.Logging.AddDebug();
