@@ -60,22 +60,20 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="appsetting.json" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Content Include="appsetting.json">
+	  <Content Include="appsettings.json">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </Content>
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.7" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Folder Include="Configuration\" />
 	  <Folder Include="Core\Utils\Converters\" />
 	  <Folder Include="Core\Utils\Mapper\" />
 	  <Folder Include="Features\Shop\Views\" />
